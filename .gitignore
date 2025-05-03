@@ -1,0 +1,61 @@
+# Build results
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Visual Studio Code
+.vscode/
+
+# Rider
+.idea/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Logs
+*.log
+
+# User secrets
+secrets.json
+
+# Publish results
+wwwroot/dist/
+wwwroot/node_modules/
+
+# Others
+*.dbmdl
+*.bak
+*.backup
+*.swp
+*.tmp
+*.tmp.*
+
+# NuGet
+*.nupkg
+# Npm
+node_modules/
+
+# Test results
+TestResults/
+
+# Azure Pipelines
+.vsts/
+
+# Resharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+
+# DotCover
+*.dotCover
+
+# Local history for Visual Studio
+.localhistory/
