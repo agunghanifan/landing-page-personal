@@ -1,20 +1,26 @@
-# Use the official .NET SDK image to build the app
+# Build stage
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 
-# Copy csproj and restore as distinct layers
+# Copy csproj and restore as separate layer (for caching)
 COPY *.csproj ./
 RUN dotnet restore
 
-# Copy everything else and build
+# Copy the rest of the source
 COPY . ./
+
+# Publish to /app/publish
 RUN dotnet publish -c Release -o /app/publish
 
-# Runtime image
+# Runtime stage
 FROM mcr.microsoft.com/dotnet/aspnet:8.0
 WORKDIR /app
+
+# Copy published app from build stage
 COPY --from=build /app/publish .
 
-# Expose port and set entry point
+# Expose HTTP port
 EXPOSE 80
-ENTRYPOINT ["dotnet", "YourApp.dll"]
+
+# Replace 'PersonalBlog.dll' with your actual DLL name
+ENTRYPOINT ["dotnet", "PersonalBlog.dll"]
