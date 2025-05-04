@@ -13,7 +13,10 @@
                     <img src="/images/FullSizeRender_2.jpeg" alt="Profile Picture" class="rounded-circle mb-4 profile-image">
                 </div>
                 <h1 class="display-4 mb-3 animate-text">Agung H. Lutfiyanto</h1>
-                <p class="lead text-muted animate-text">C# Fullstack Developer for 3 years experience</p>
+                <div class="lead text-muted animate-text" style="font-size: 1.1rem; margin-bottom: 0.5rem;">
+                    <span style="font-size:1.2em;">📍</span> Sydney, NSW, Australia
+                </div>
+                <p class="lead text-muted animate-text">C# Fullstack Developer | 3+ Years Building Modern Solutions</p>
                 <div class="social-links mt-3">
                     <a href="https://www.linkedin.com/in/agunghanifan/" class="social-link"><i class="bi bi-linkedin"></i></a>
                     <a href="https://github.com/agunghanifan" class="social-link"><i class="bi bi-github"></i></a>
@@ -28,14 +31,14 @@
         <h2 class="text-center mb-4 section-title">About Me</h2>
         <div class="row justify-content-center">
             <div class="col-md-8">
-                <p class="about-text" style="text-align: left; margin-bottom: 1.2em;">
-                    Hi, I’m Agung — a full-stack developer with a strong background in building web apps and enterprise systems that actually make a difference. Over the past few years, I’ve worked with companies like PT. MPM Insurance and PT. Adicipta Inovasi Teknologi, where I helped develop and maintain systems used by big clients, improved performance, and made life easier for teams through smart automation and clean code.
+                <p class="about-text" style="text-align: justify; margin-bottom: 1.2em;">
+                    Hi, I'm Agung — a full-stack developer with a strong background in building web apps and enterprise systems that actually make a difference. Over the past few years, I've worked with companies like PT. MPM Insurance and PT. Adicipta Inovasi Teknologi, where I helped develop and maintain systems used by big clients, improved performance, and made life easier for teams through smart automation and clean code.
                 </p>
-                <p class="about-text" style="text-align: left; margin-bottom: 1.2em;">
-                    My main tools are C#, .NET, React, and Node.js, but I’m always open to learning new tech. I’m also into DevOps and have experience setting up CI/CD pipelines that save time and reduce headaches for developers.
+                <p class="about-text" style="text-align: justify; margin-bottom: 1.2em;">
+                    My main tools are C#, .NET, React, and Node.js, but I'm always open to learning new tech. I'm also into DevOps and have experience setting up CI/CD pipelines that save time and reduce headaches for developers.
                 </p>
-                <p class="about-text" style="text-align: left; margin-bottom: 1.2em;">
-                    Right now, I’m taking a breather between jobs and looking for my next opportunity. If you’re after someone who’s easy to work with, quick to pick things up, and genuinely enjoys building solid, useful software — I’d love to connect!
+                <p class="about-text" style="text-align: justify; margin-bottom: 1.2em;">
+                    Right now, I'm taking a breather between jobs and looking for my next opportunity. If you're after someone who's easy to work with, quick to pick things up, and genuinely enjoys building solid, useful software — I'd love to connect!
                 </p>
             </div>
         </div>
@@ -88,21 +91,21 @@
                     <div class="timeline-item">
                         <h4>IT Developer Section Head - Full Time</h4>
                         <p class="text-muted">PT. MPM Insurance, Indonesia | October 2022 - Agustus 2024</p>
-                        <p class="about-text" style="text-align: left; margin-bottom: 1.2em;">
+                        <p class="about-text" style="text-align: justify; margin-bottom: 1.2em;">
                             As the IT Developer Section Head at PT. MPM Insurance, I led the development and delivery 
                             of multiple core system transformation applications that are now integral to company 
                             operations. I was responsible for overseeing the full software development lifecycle—from 
                             initial planning to deployment—ensuring that all solutions met business needs and adhered 
                             to best practices in performance, security, and scalability.
                         </p>
-                        <p class="about-text" style="text-align: left; margin-bottom: 1.2em;">
+                        <p class="about-text" style="text-align: justify; margin-bottom: 1.2em;">
                             I guided and collaborated with developers, stakeholders, and cross-functional teams 
                             to define project scope, set clear timelines, and align technical execution with business 
                             goals. Under my leadership, we successfully implemented and maintained CI/CD pipelines 
                             for more than three cloud-based web applications, significantly improving deployment speed, 
                             reliability, and team productivity.
                         </p>
-                        <p class="about-text" style="text-align: left; margin-bottom: 1.2em;">
+                        <p class="about-text" style="text-align: justify; margin-bottom: 1.2em;">
                             My role also involved mentoring junior developers, facilitating code reviews, and 
                             continuously identifying opportunities for process and system improvements across 
                             the department.
@@ -111,7 +114,7 @@
                     <div class="timeline-item">
                         <h4>R&D Developer - Full Time</h4>
                         <p class="text-muted">PT. Adicipta Inovasi Teknologi, Indonesia | June 2021 - October 2022</p>
-                        <p class="about-text" style="text-align: left; margin-bottom: 1.2em;">
+                        <p class="about-text" style="text-align: justify; margin-bottom: 1.2em;">
                             As an R&D Developer at PT. Adicipta Inovasi Teknologi, I was responsible for designing, 
                             developing, and maintaining core applications now used by over five major enterprise clients. 
                             My role combined hands-on development with innovation-focused research, where I evaluated and 
@@ -119,7 +122,7 @@
                             One such initiative resulted in a 10% improvement in application speed and enabled seamless 
                             deployment both on-premise and in cloud environments.
                         </p>
-                        <p class="about-text" style="text-align: left; margin-bottom: 1.2em;">
+                        <p class="about-text" style="text-align: justify; margin-bottom: 1.2em;">
                             I also managed ongoing maintenance and bug fixes across multiple core applications, 
                             achieving a 99% issue resolution rate tracked through JIRA. 
                             Additionally, I introduced structured system design documentation and versioning strategies 
@@ -347,34 +350,89 @@
         }
 
         /* Responsive Design */
-        @@media (max-width: 768px) {
-            .hero-section {
-                margin-top: 1rem;
-                padding: 2rem 0;
+        @@media (max-width: 992px) {
+            .container {
+                padding-left: 1rem;
+                padding-right: 1rem;
             }
-
+            .hero-section,
+            .about-section,
+            .skills-section,
+            .experience-section,
+            .contact-section,
+            section {
+                padding: 2rem 0.5rem;
+            }
             .profile-image {
-                width: 120px;
-                height: 120px;
+                width: 110px;
+                height: 110px;
             }
-
             .section-title {
-                font-size: 1.8rem;
-            }
-
-            .skill-card {
-                margin-bottom: 1rem;
+                font-size: 1.5rem;
             }
         }
-
-        @@media (max-width: 576px) {
-            .social-link {
-                margin: 0 10px;
-                font-size: 1.3rem;
+        @@media (max-width: 768px) {
+            .hero-section,
+            .about-section,
+            .skills-section,
+            .experience-section,
+            .contact-section,
+            section {
+                padding: 1.5rem 0.5rem;
             }
-
+            .profile-image {
+                width: 90px;
+                height: 90px;
+            }
+            .section-title {
+                font-size: 1.2rem;
+            }
+            .skill-card {
+                padding: 1rem;
+                margin-bottom: 1rem;
+            }
+            .timeline-item {
+                padding-left: 0.8rem;
+            }
             .contact-btn {
-                padding: 0.6rem 1.5rem;
+                padding: 0.7rem 1.2rem;
+                font-size: 1rem;
+            }
+            .social-link {
+                margin: 0 8px;
+                font-size: 1.2rem;
+            }
+        }
+        @@media (max-width: 576px) {
+            .container {
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+            }
+            .row {
+                margin-left: 0;
+                margin-right: 0;
+            }
+            .col-md-8, .col-md-6 {
+                padding-left: 0;
+                padding-right: 0;
+            }
+            .profile-image {
+                width: 70px;
+                height: 70px;
+            }
+            .section-title {
+                font-size: 1rem;
+            }
+            .skill-card {
+                padding: 0.7rem;
+            }
+            .contact-btn {
+                padding: 0.5rem 1rem;
+                font-size: 0.95rem;
+            }
+            .social-link {
+                margin: 0 5px;
+                font-size: 1rem;
             }
         }
     </style>
